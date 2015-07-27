@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 	<div id="page">
 		<header>
-			<div id="navbar">
+			<div id="navbar" class="box-shadow">
 				<div id="site-name">
 					<a href="">
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
@@ -31,7 +31,7 @@
                 </nav>
 			</div><!-- #navbar -->
 			<div id="header-img">
-				<div id="header-logo">
+				<div id="header-logo" class="box-shadow">
 					<img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png">
 				</div><!--#header-logo-->
 				<div id="header-background-img">

@@ -1,0 +1,103 @@
+/*
+	Theme Name: Sandra Wolf Praxis füür Atem- und Körpertherapie
+	Theme URI: none
+	Description: Webpage Theme for Praxis füür Atem- und Körpertherapie
+	Author: David Schmid
+	Author URI: hexcode.ch
+*/
+
+//vars
+$primary-color1: #a9e51b;
+$primary-color2: #8dc315;
+$secondary-color1: #ffebb5;
+
+$fontset1:'Didact gothic', 'Open Sans', sans-serif;
+
+$nav-height: 80px;
+
+html, body{
+	padding: 0;
+	margin: 0 !important;
+}
+
+h1,h2,h3{
+	font-family: $fontset1;
+}
+h1{
+	font-size: 2em;
+	font-weight: 300;
+	margin: 0;
+}
+h2{
+	font-size: 2em;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#page{
+	
+	#navbar{
+		background-color: $primary-color1;
+		width: 100%;
+		height: $nav-height;
+		margin: 0;
+		
+		a{
+			font-family: $fontset1;
+			line-height: $nav-height;
+		}
+		#site-name{
+			position: absolute;
+		}
+		nav{
+			position: absolute;
+			right: 0;
+			ul{
+				margin: 0;
+				padding: 0;
+				
+				li{
+					display: inline-block;
+					list-style: none;
+					padding: 0 5px;
+				}
+				li:hover{
+					background-color: $primary-color2;
+				}
+			}
+		}
+	}
+	#header-img{
+		#header-logo{
+			position: absolute;
+			top: calc(15vw + 80px);
+			left: 50%;
+			margin-left: -10vw;
+			background-color: $secondary-color1;
+			border-radius: 50%;
+			img{
+				width: 20vw;
+			}
+		}
+		#header-background-img{
+			
+			img{
+				width: 100%;
+			}
+		}
+	}
+	#content{
+		width: 90%;
+		position: relative;
+		top: -3em;
+		margin: 0 auto;
+		background-color: $secondary-color1;
+		
+		section{
+			
+			
+		}
+	}
+}

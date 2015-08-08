@@ -9,7 +9,8 @@
 //vars
 $primary-color1: #a9e51b;
 $primary-color2: #8dc315;
-$secondary-color1: #ffebb5;
+$secondary-color1: rgb(255, 255, 240);
+$secondary-color2: #ffefdd;
 
 $fontset1:'Didact gothic', 'Open Sans', sans-serif;
 
@@ -18,6 +19,7 @@ $nav-height: 80px;
 html, body{
 	padding: 0;
 	margin: 0 !important;
+	margin-top: 0 !important;
 }
 
 h1,h2,h3{
@@ -50,7 +52,7 @@ a{
 		height: $nav-height;
 		margin: 0;
 		position: fixed;
-		z-index: 100;
+		z-index: 10;
 		
 		a{
 			font-family: $fontset1;
@@ -63,6 +65,9 @@ a{
 		nav{
 			position: absolute;
 			right: 0;
+			.nav-button{
+				display: none;
+			}
 			ul{
 				margin: 0;
 				padding: 0;
@@ -75,6 +80,28 @@ a{
 				li:hover{
 					background-color: $primary-color2;
 				}
+				
+			}
+			.sub-menu{
+				position: absolute;
+				display: none;
+				z-index: 9;
+				background-color: $primary-color1;
+				padding-left:0;
+				margin: 0;
+				margin-left: -5px;
+				width: 300px;
+				@extend .box-shadow;
+				
+				li{
+					display: block;
+					background-color: $primary-color1;
+					width: 300px;
+					z-index: 10;
+				}
+			}
+			ul > .menu-item-has-children:hover > ul{
+				display: block;
 			}
 		}
 	}
@@ -101,7 +128,7 @@ a{
 		width: 90%;
 		position: relative;
 		margin: -3em auto 0 auto;
-		background-color: $secondary-color1;
+		background-color: $secondary-color2;
 		
 		section{
 			min-height: 300px;
@@ -109,6 +136,31 @@ a{
 		section > *{
 			padding-left: 5px;
 			font-family: $fontset1;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#page{
+		#navbar{
+			nav{
+				.nav-button{
+					display: block;
+				}
+				.show-nav{
+					display: block;
+				}
+				ul{
+					display: none;
+					z-index: 10;
+					width: 100%;
+					li{
+						width: 100%;
+						display: block;
+
+					}
+				}
+			}
 		}
 	}
 }

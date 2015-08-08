@@ -13,6 +13,14 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link href='http://fonts.googleapis.com/css?family=Poppins|Didact+Gothic|Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
+	<style type="text/css" media="screen">
+	html { margin-top: 0 !important; }
+	* html body { margin-top: 0 !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 0 !important; }
+		* html body { margin-top: 0 !important; }
+	}
+</style>
 </head>
 <body <?php body_class(); ?>>
 	<div id="page">
@@ -24,6 +32,7 @@
 					</a>
 				</div><!--#site-name-->
 				<nav>
+					<div class="nav-button" id="nav-button"><a>Menu</a></div>
                     <?php wp_nav_menu( array(
                         'menu_class' => 'nav', //Fügt eine Klasse zum Menü hinzu
                         'container_id' => 'navwrap', //Legt ID von dem Container fest, der das komplette Menü umgibt

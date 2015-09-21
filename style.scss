@@ -1,9 +1,10 @@
 /*
-	Theme Name: Sandra Wolf Praxis füür Atem- und Körpertherapie
+	Theme Name: Sandra Wolf Praxis für Atem- und Körpertherapie
 	Theme URI: none
 	Description: Webpage Theme for Praxis füür Atem- und Körpertherapie
 	Author: David Schmid
 	Author URI: hexcode.ch
+	Page URI: atem-cranio.ch
 */
 
 //vars
@@ -22,8 +23,9 @@ html, body{
 	margin-top: 0 !important;
 }
 
-h1,h2,h3{
+h1,h2,h3, h4, h5, h6{
 	font-family: $fontset1;
+	font-weight: 200
 }
 h1{
 	font-size: 2em;
@@ -31,7 +33,8 @@ h1{
 	margin: 0;
 }
 h2{
-	font-size: 2em;
+	font-size: 1.8em;
+	font-weight: 200;
 }
 a{
 	text-decoration: none;
@@ -60,7 +63,7 @@ a{
 		}
 		#site-name{
 			position: absolute;
-			padding-left: 5px;
+			padding-left: 10px;
 		}
 		nav{
 			position: absolute;
@@ -82,7 +85,7 @@ a{
 				}
 				
 			}
-			.sub-menu{
+			.sub-menu, .children{
 				position: absolute;
 				display: none;
 				z-index: 9;
@@ -100,7 +103,7 @@ a{
 					z-index: 10;
 				}
 			}
-			ul > .menu-item-has-children:hover > ul{
+			ul > .menu-item-has-children:hover > ul, ul > .page-item-has-children:hover > ul{
 				display: block;
 			}
 		}
@@ -118,8 +121,9 @@ a{
 			}
 		}
 		#header-background-img{
-			
+			padding-top: 80px;
 			img{
+				top: 80px;
 				width: 100%;
 			}
 		}
@@ -134,13 +138,37 @@ a{
 			min-height: 300px;
 		}
 		section > *{
-			padding-left: 5px;
+			
+			padding: 10px;
 			font-family: $fontset1;
 		}
 	}
 }
+@media screen and (max-width: 1200px){
+	h1{
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 1100px){
+	h1{
+		font-size: 1.6em;
+	}
+}
+@media screen and (max-width: 1000px){
+	h1{
+		font-size: 1.4em;
+	}
+}
+@media screen and (max-width: 900px){
+	h1{
+		font-size: 1.2em;
+	}
+}
 
 @media screen and (max-width: 800px) {
+	h1{
+		font-size: 1.2em;
+	}
 	#page{
 		#navbar{
 			nav{
@@ -161,6 +189,14 @@ a{
 					}
 				}
 			}
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	#page{
+		#content{
+			width: 100%;
+			margin: -0.5em auto 0 auto;
 		}
 	}
 }

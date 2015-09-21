@@ -1,3 +1,178 @@
-html,body{padding:0;margin:0 !important;margin-top:0 !important}h1,h2,h3{font-family:"Didact gothic","Open Sans",sans-serif}h1{font-size:2em;font-weight:300;margin:0}h2{font-size:2em}a{text-decoration:none;color:black}.box-shadow,#page #navbar nav .sub-menu{-webkit-box-shadow:0px 0px 5px 0px rgba(50,50,50,0.75);-moz-box-shadow:0px 0px 5px 0px rgba(50,50,50,0.75);box-shadow:0px 0px 5px 0px rgba(50,50,50,0.75)}#page #navbar{background-color:#a9e51b;width:100%;height:80px;margin:0;position:fixed;z-index:10}#page #navbar a{font-family:"Didact gothic","Open Sans",sans-serif;line-height:80px}#page #navbar #site-name{position:absolute;padding-left:5px}#page #navbar nav{position:absolute;right:0}#page #navbar nav .nav-button{display:none}#page #navbar nav ul{margin:0;padding:0}#page #navbar nav ul li{display:inline-block;list-style:none;padding:0 5px}#page #navbar nav ul li:hover{background-color:#8dc315}#page #navbar nav .sub-menu{position:absolute;display:none;z-index:9;background-color:#a9e51b;padding-left:0;margin:0;margin-left:-5px;width:300px}#page #navbar nav .sub-menu li{display:block;background-color:#a9e51b;width:300px;z-index:10}#page #navbar nav ul>.menu-item-has-children:hover>ul{display:block}#page #header-img #header-logo{position:absolute;top:calc(10vw + 80px);left:50%;margin-left:-10vw;background-color:ivory;border-radius:50%}#page #header-img #header-logo img{width:20vw}#page #header-img #header-background-img img{width:100%}#page #content{width:90%;position:relative;margin:-3em auto 0 auto;background-color:#ffefdd}#page #content section{min-height:300px}#page #content section>*{padding-left:5px;font-family:"Didact gothic","Open Sans",sans-serif}@media screen and (max-width: 800px){#page #navbar nav .nav-button{display:block}#page #navbar nav .show-nav{display:block}#page #navbar nav ul{display:none;z-index:10;width:100%}#page #navbar nav ul li{width:100%;display:block}}
+@charset "UTF-8";
+/*
+	Theme Name: Sandra Wolf Praxis für Atem- und Körpertherapie
+	Theme URI: none
+	Description: Webpage Theme for Praxis füür Atem- und Körpertherapie
+	Author: David Schmid
+	Author URI: hexcode.ch
+	Page URI: atem-cranio.ch
+*/
+/* line 20, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+html, body {
+  padding: 0;
+  margin: 0 !important;
+  margin-top: 0 !important; }
+
+/* line 26, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Didact gothic", "Open Sans", sans-serif;
+  font-weight: 200; }
+
+/* line 30, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0; }
+
+/* line 35, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+h2 {
+  font-size: 1.8em;
+  font-weight: 200; }
+
+/* line 39, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+a {
+  text-decoration: none;
+  color: black; }
+
+/* line 44, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+.box-shadow, #page #navbar nav .sub-menu, #page #navbar nav .children {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+
+/* line 52, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+#page #navbar {
+  background-color: #a9e51b;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  position: fixed;
+  z-index: 10; }
+  /* line 60, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar a {
+    font-family: "Didact gothic", "Open Sans", sans-serif;
+    line-height: 80px; }
+  /* line 64, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar #site-name {
+    position: absolute;
+    padding-left: 10px; }
+  /* line 68, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar nav {
+    position: absolute;
+    right: 0; }
+    /* line 71, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    #page #navbar nav .nav-button {
+      display: none; }
+    /* line 74, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    #page #navbar nav ul {
+      margin: 0;
+      padding: 0; }
+      /* line 78, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      #page #navbar nav ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 5px; }
+      /* line 83, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      #page #navbar nav ul li:hover {
+        background-color: #8dc315; }
+    /* line 88, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    #page #navbar nav .sub-menu, #page #navbar nav .children {
+      position: absolute;
+      display: none;
+      z-index: 9;
+      background-color: #a9e51b;
+      padding-left: 0;
+      margin: 0;
+      margin-left: -5px;
+      width: 300px; }
+      /* line 99, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      #page #navbar nav .sub-menu li, #page #navbar nav .children li {
+        display: block;
+        background-color: #a9e51b;
+        width: 300px;
+        z-index: 10; }
+    /* line 106, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    #page #navbar nav ul > .menu-item-has-children:hover > ul, #page #navbar nav ul > .page-item-has-children:hover > ul {
+      display: block; }
+
+/* line 112, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+#page #header-img #header-logo {
+  position: absolute;
+  top: calc(10vw + 80px);
+  left: 50%;
+  margin-left: -10vw;
+  background-color: ivory;
+  border-radius: 50%; }
+  /* line 119, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #header-img #header-logo img {
+    width: 20vw; }
+
+/* line 123, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+#page #header-img #header-background-img {
+  padding-top: 80px; }
+  /* line 125, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #header-img #header-background-img img {
+    top: 80px;
+    width: 100%; }
+
+/* line 131, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+#page #content {
+  width: 90%;
+  position: relative;
+  margin: -3em auto 0 auto;
+  background-color: #ffefdd; }
+  /* line 137, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #content section {
+    min-height: 300px; }
+  /* line 140, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #content section > * {
+    padding: 10px;
+    font-family: "Didact gothic", "Open Sans", sans-serif; }
+
+@media screen and (max-width: 1200px) {
+  /* line 148, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  h1 {
+    font-size: 1.8em; } }
+
+@media screen and (max-width: 1100px) {
+  /* line 153, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  h1 {
+    font-size: 1.6em; } }
+
+@media screen and (max-width: 1000px) {
+  /* line 158, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  h1 {
+    font-size: 1.4em; } }
+
+@media screen and (max-width: 900px) {
+  /* line 163, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  h1 {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 800px) {
+  /* line 169, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  h1 {
+    font-size: 1.2em; }
+  /* line 175, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar nav .nav-button {
+    display: block; }
+  /* line 178, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar nav .show-nav {
+    display: block; }
+  /* line 181, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar nav ul {
+    display: none;
+    z-index: 10;
+    width: 100%; }
+    /* line 185, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    #page #navbar nav ul li {
+      width: 100%;
+      display: block; } }
+
+@media screen and (max-width: 500px) {
+  /* line 197, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #content {
+    width: 100%;
+    margin: -0.5em auto 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

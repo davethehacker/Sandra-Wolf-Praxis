@@ -51,7 +51,7 @@
 					</a>
 				</div><!--#site-name-->
 				<nav>
-					<div class="nav-button" id="nav-button"><a>Menu</a></div>
+					<div class="nav-button" id="nav-button" onclick="js-function();"><a>Menu</a></div>
                     <?php wp_nav_menu( array(
                         'menu_class' => 'nav', //Fügt eine Klasse zum Menü hinzu
                         'container_id' => 'navwrap', //Legt ID von dem Container fest, der das komplette Menü umgibt

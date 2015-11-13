@@ -8,12 +8,15 @@
 */
 
 //vars
-$primary-color1: #a9e51b;
-$primary-color2: #8dc315;
+$primary-color1: #f2a221;
+$primary-color2: #e0961f;
 $secondary-color1: rgb(255, 255, 240);
-$secondary-color2: #ffefdd;
+$secondary-color2: #fdfdb9;
+
+$font-color: #3c3c3c;
 
 $fontset1:'Didact gothic', 'Open Sans', sans-serif;
+$fontset2: 'Oxygen', 'Open Sans', sans-serif;
 
 $nav-height: 80px;
 
@@ -25,20 +28,23 @@ html, body{
 
 h1,h2,h3, h4, h5, h6{
 	font-family: $fontset1;
-	font-weight: 200
+	font-weight: 400;
+	color: $font-color;
 }
 h1{
-	font-size: 2em;
-	font-weight: 300;
+	font-size: 2.5em;
 	margin: 0;
 }
 h2{
 	font-size: 1.8em;
-	font-weight: 200;
 }
 a{
 	text-decoration: none;
-	color: black;
+	color: $font-color;
+}
+#content a{
+	text-decoration: none;
+	color: $font-color;
 }
 
 .box-shadow{
@@ -68,6 +74,7 @@ a{
 		nav{
 			position: absolute;
 			right: 0;
+			padding-right: 10px;
 			.nav-button{
 				display: none;
 			}
@@ -129,44 +136,57 @@ a{
 		}
 	}
 	#content{
-		width: 90%;
+		width: 85%;
 		position: relative;
 		margin: -3em auto 0 auto;
 		background-color: $secondary-color2;
+		color: $font-color;
 		
 		section{
 			min-height: 300px;
+			header{
+				h1{
+					font-size: 1.8em;
+					line-height: 40px
+				}
+				font-size: 1.1em;
+			}
+		}
+		section > title{
+			display: block;
+			padding-bottom: 0;
 		}
 		section > *{
-			
 			padding: 10px;
-			font-family: $fontset1;
+			font-family: $fontset2;
+			font-size: 1.1em;
+			font-weight: 400;
 		}
 	}
 }
 @media screen and (max-width: 1200px){
-	h1{
+	#site-name h1{
 		font-size: 1.8em;
 	}
 }
 @media screen and (max-width: 1100px){
-	h1{
+	#site-name h1{
 		font-size: 1.6em;
 	}
 }
 @media screen and (max-width: 1000px){
-	h1{
+	#site-name h1{
 		font-size: 1.4em;
 	}
 }
 @media screen and (max-width: 900px){
-	h1{
+	#site-name h1{
 		font-size: 1.2em;
 	}
 }
 
 @media screen and (max-width: 800px) {
-	h1{
+	#site-name h1{
 		font-size: 1.2em;
 	}
 	#page{
@@ -181,9 +201,10 @@ a{
 				ul{
 					display: none;
 					z-index: 10;
-					width: 100%;
+					
+					background-color: $primary-color1;
 					li{
-						width: 100%;
+						width: 100vw;
 						display: block;
 
 					}

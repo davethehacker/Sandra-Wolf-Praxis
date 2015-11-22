@@ -12,6 +12,7 @@ $primary-color1: #f2a221;
 $primary-color2: #e0961f;
 $secondary-color1: rgb(255, 255, 240);
 $secondary-color2: #fdfdb9;
+$background-color: #98c52c;
 
 $font-color: #3c3c3c;
 
@@ -24,6 +25,10 @@ html, body{
 	padding: 0;
 	margin: 0 !important;
 	margin-top: 0 !important;
+	line-height: 1.5;
+}
+body{
+	background-color: $background-color;
 }
 
 h1,h2,h3, h4, h5, h6{
@@ -52,9 +57,11 @@ a{
 	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
 }
-
+img{
+	max-width: 100%;
+}
 #page{
-	
+	margin-top: 48px;
 	#navbar{
 		background-color: $primary-color1;
 		width: 100%;
@@ -117,7 +124,7 @@ a{
 	}
 	#header-img{
 		#header-logo{
-			position: absolute;
+			position: fixed;
 			top: calc(10vw + 80px);
 			left: 50%;
 			margin-left: -10vw;
@@ -128,6 +135,8 @@ a{
 			}
 		}
 		#header-background-img{
+			position: fixed;
+			z-index: -1;
 			padding-top: 80px;
 			img{
 				top: 80px;
@@ -136,20 +145,30 @@ a{
 		}
 	}
 	#content{
-		width: 85%;
+		width: 75%;
 		position: relative;
+		top: calc(40vw + 45px);	
 		margin: -3em auto 0 auto;
 		background-color: $secondary-color2;
 		color: $font-color;
 		
 		section{
 			min-height: 300px;
-			header{
-				h1{
-					font-size: 1.8em;
-					line-height: 40px
+			article{
+				width: 70%;
+				header{
+					h1{
+						font-size: 1.8em;
+						line-height: 40px
+					}
+					font-size: 1.1em;
 				}
-				font-size: 1.1em;
+			}
+			.sidebar{
+				width: 25%;
+				position: absolute;
+				top: 50px;
+				right: 0;
 			}
 		}
 		section > title{
@@ -211,13 +230,24 @@ a{
 				}
 			}
 		}
+		#content{
+			section{
+				article{
+					width: 90%;
+				}
+				.sidebar{
+					width: 70%;
+					position: relative;
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 500px){
 	#page{
 		#content{
 			width: 100%;
-			margin: -0.5em auto 0 auto;
+			//margin: -0.5em auto 0 auto;
 		}
 	}
 }

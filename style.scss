@@ -150,9 +150,10 @@ img{
 	#content{
 		width: 75%;
 		position: relative;
-		top: calc(40vw + 45px);	
+		top: calc(39vw + 45px);	
 		margin: -3em auto 0 auto;
 		background-color: $secondary-color2;
+		height: 100%;
 		color: $font-color;
 		
 		section{
@@ -170,8 +171,9 @@ img{
 			.sidebar{
 				width: 25%;
 				position: absolute;
-				top: 50px;
+				top: 0;
 				right: 0;
+				margin-top: 50px;
 			}
 		}
 		section > title{

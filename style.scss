@@ -97,6 +97,9 @@ img{
 				li:hover{
 					background-color: $primary-color2;
 				}
+				.current-menu-item{
+					background-color: $primary-color2;
+				}
 				
 			}
 			.sub-menu, .children{
@@ -213,6 +216,9 @@ img{
 			nav{
 				.nav-button{
 					display: block;
+					position: absolute;
+					right: 0px;
+					padding-right: 10px;
 				}
 				.show-nav{
 					display: block;
@@ -220,12 +226,23 @@ img{
 				ul{
 					display: none;
 					z-index: 10;
-					
+					left: 0;
+					top: 80px;
+					position: fixed;
 					background-color: $primary-color1;
 					li{
-						width: 100vw;
+						width: 1000vw;
 						display: block;
-
+						padding-left: 10px;
+						
+						.sub-menu, .children{
+					    position: relative;
+    					width: 100%;
+    					top: 0;
+							li{
+								width: 100%;
+							}
+						}
 					}
 				}
 			}

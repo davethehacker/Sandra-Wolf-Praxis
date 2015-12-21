@@ -1,2 +1,7 @@
-var element = document.getElementById("navbar");
-element.classList.add("show-nav");
+function toggleMenu() {
+	if (document.getElementById("menu-menu").getAttribute('class') === 'show-nav') {
+	document.getElementById("menu-menu").className = "hide-nav";
+} else {
+	document.getElementById("menu-menu").className = "show-nav";
+}
+}

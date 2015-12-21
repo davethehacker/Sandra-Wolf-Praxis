@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link href='http://fonts.googleapis.com/css?family=Poppins|Didact+Gothic|Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+	<script src="<?php echo get_bloginfo('template_directory'); ?>/script.js" type="text/javascript"></script>
 	
 	<?php wp_head(); ?>
 	<style type="text/css" media="screen">
@@ -36,7 +37,7 @@
 					</a>
 				</div><!--#site-name-->
 				<nav>
-					<div class="nav-button" id="nav-button" onclick="js-function();"><a>Menu</a></div>
+					<div class="nav-button" id="nav-button" onclick="toggleMenu();"><a>Menu</a></div>
                     <?php wp_nav_menu( array(
                         'menu_class' => 'nav', //Fügt eine Klasse zum Menü hinzu
                         'container_id' => 'navwrap', //Legt ID von dem Container fest, der das komplette Menü umgibt

@@ -92,7 +92,10 @@ img {
         /* line 97, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
         #page #navbar nav ul li:hover {
           background-color: #e0961f; }
-      /* line 102, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+        /* line 100, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+        #page #navbar nav ul .current-menu-item {
+          background-color: #e0961f; }
+      /* line 105, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
       #page #navbar nav .sub-menu, #page #navbar nav .children {
         position: absolute;
         display: none;
@@ -102,16 +105,16 @@ img {
         margin: 0;
         margin-left: -5px;
         width: 300px; }
-        /* line 113, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+        /* line 116, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
         #page #navbar nav .sub-menu li, #page #navbar nav .children li {
           display: block;
           background-color: #f2a221;
           width: 300px;
           z-index: 10; }
-      /* line 120, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      /* line 123, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
       #page #navbar nav ul > .menu-item-has-children:hover > ul, #page #navbar nav ul > .page-item-has-children:hover > ul {
         display: block; }
-  /* line 126, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 129, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #header-img #header-logo {
     position: fixed;
     top: calc(10vw + 80px);
@@ -119,19 +122,19 @@ img {
     margin-left: -10vw;
     background-color: ivory;
     border-radius: 50%; }
-    /* line 133, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    /* line 136, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
     #page #header-img #header-logo img {
       width: 20vw; }
-  /* line 137, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 140, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #header-img #header-background-img {
     position: fixed;
     z-index: -1;
     padding-top: 80px; }
-    /* line 141, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    /* line 144, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
     #page #header-img #header-background-img img {
       top: 80px;
       width: 100%; }
-  /* line 147, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 150, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #content {
     width: 75%;
     position: relative;
@@ -139,30 +142,30 @@ img {
     margin: -3em auto 0 auto;
     background-color: #fdfdb9;
     color: #3c3c3c; }
-    /* line 155, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    /* line 158, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
     #page #content section {
       min-height: 300px; }
-      /* line 157, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      /* line 160, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
       #page #content section article {
         width: 70%; }
-        /* line 159, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+        /* line 162, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
         #page #content section article header {
           font-size: 1.1em; }
-          /* line 160, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+          /* line 163, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
           #page #content section article header h1 {
             font-size: 1.8em;
             line-height: 40px; }
-      /* line 167, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      /* line 170, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
       #page #content section .sidebar {
         width: 25%;
         position: absolute;
         top: 50px;
         right: 0; }
-    /* line 174, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    /* line 177, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
     #page #content section > title {
       display: block;
       padding-bottom: 0; }
-    /* line 178, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    /* line 181, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
     #page #content section > * {
       padding: 10px;
       font-family: "Oxygen", "Open Sans", sans-serif;
@@ -170,54 +173,69 @@ img {
       font-weight: 400; }
 
 @media screen and (max-width: 1200px) {
-  /* line 187, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 190, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #site-name h1 {
     font-size: 1.8em; } }
 
 @media screen and (max-width: 1100px) {
-  /* line 192, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 195, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #site-name h1 {
     font-size: 1.6em; } }
 
 @media screen and (max-width: 1000px) {
-  /* line 197, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 200, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #site-name h1 {
     font-size: 1.4em; } }
 
 @media screen and (max-width: 900px) {
-  /* line 202, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 205, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #site-name h1 {
     font-size: 1.2em; } }
 
 @media screen and (max-width: 800px) {
-  /* line 208, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 211, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #site-name h1 {
     font-size: 1.2em; }
-  /* line 214, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
-  #page #navbar nav .nav-button {
-    display: block; }
   /* line 217, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  #page #navbar nav .nav-button {
+    display: block;
+    position: absolute;
+    right: 0px;
+    padding-right: 10px; }
+  /* line 223, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #navbar nav .show-nav {
     display: block; }
-  /* line 220, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 226, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #navbar nav ul {
     display: none;
     z-index: 10;
+    left: 0;
+    top: 80px;
+    position: fixed;
     background-color: #f2a221; }
-    /* line 225, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+    /* line 233, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
     #page #navbar nav ul li {
-      width: 100vw;
-      display: block; }
-  /* line 235, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      width: 1000vw;
+      display: block;
+      padding-left: 10px; }
+      /* line 238, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+      #page #navbar nav ul li .sub-menu, #page #navbar nav ul li .children {
+        position: relative;
+        width: 100%;
+        top: 0; }
+        /* line 242, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+        #page #navbar nav ul li .sub-menu li, #page #navbar nav ul li .children li {
+          width: 100%; }
+  /* line 252, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #content section article {
     width: 90%; }
-  /* line 238, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 255, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #content section .sidebar {
     width: 70%;
     position: relative; } }
 
 @media screen and (max-width: 500px) {
-  /* line 248, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
+  /* line 265, E:/OneDrive/Code/Web/sandra-wp/wp-content/themes/sandrawolf/style.scss */
   #page #content {
     width: 100%; } }
 

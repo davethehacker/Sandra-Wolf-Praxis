@@ -12,21 +12,19 @@ echo $obj->labels->name; ?></title>
 		<div><?php the_field('html_import')?></div>
 		
 		<?php
-			echo var_dump();
+			//echo var_dump();
 			if (get_field('download', $post->ID)){
 				echo '<a href="';
 				the_field('download');
-				echo '" download>Auscchreibung herunterladen</a>';
+				echo '" download>Auschreibung herunterladen</a>';
 			}
 			 ?>
-	</header>
 	</header>
 
 </article>
 <?php endwhile; endif; ?>
 </section>
-</div>
-
-</div> <!-- content -->
+<?php include 'logo-footer.php'; ?>
+</div><!-- content -->
              
 <?php get_footer(); ?>

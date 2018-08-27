@@ -33,7 +33,7 @@ if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
 <?php endwhile; endif; ?>
 </section>
 </div>
-
+<?php include 'logo-footer.php'; ?>
 </div> <!-- content -->
              
 <?php get_footer(); ?>

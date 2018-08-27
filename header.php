@@ -1,10 +1,3 @@
-<?php
-/**
- * Header File...
- */
-?>
-
-<?php error_reporting(E_ALL);?>
 <!DOCTYPE html>
 
 <head>
@@ -13,7 +6,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
-	<link href='http://fonts.googleapis.com/css?family=Poppins|Didact+Gothic|Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poppins|Didact+Gothic|Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
 	<script src="<?php echo get_bloginfo('template_directory'); ?>/script.js" type="text/javascript"></script>
 	
@@ -32,7 +25,7 @@
 		<header>
 			<div id="navbar" class="box-shadow">
 				<div id="site-name">
-					<a href="">
+					<a href="<?php bloginfo( 'url' ); ?>">
 						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 					</a>
 				</div><!--#site-name-->
@@ -45,7 +38,7 @@
                 </nav>
 			</div><!-- #navbar -->
 			<div id="header-img">
-				<div id="header-logo" class="box-shadow">
+				<div id="header-logo">
 					<img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png">
 				</div><!--#header-logo-->
 				<div id="header-background-img">

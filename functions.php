@@ -47,3 +47,6 @@ function custom_post_type() {
 add_action( 'init', 'custom_post_type', 0 );
 
 ?>
+<?php
+
+remove_action('wp_head', 'wp_generator');
